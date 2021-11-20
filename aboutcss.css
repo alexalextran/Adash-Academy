@@ -5,13 +5,46 @@
 }
 
 body, html {
-  overflow: hidden;
+  display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.col-1 {
+  background: #3c3735;
+  flex: 1;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+
+.flex-container{
+  display:flex;
+  flex-flow: row nowrap;
+  box-shadow:  0px 0px 20px rgb(78, 76, 76);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.maincentertop{
+  padding: 20px
+}
+
+.maincentertight{
+  padding: 30px;
+width: 50%;
 }
 
 .container {
-  width: 100%;
-  height: 100vh;
-  background: #232323;
+  width: 50%;
+  height: 30vh;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +74,7 @@ body, html {
 }
 .container .box .title h1 {
   font-family: "Poppins";
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 32px;
   -webkit-animation: mainFadeIn 2s forwards;
   -o-animation: mainFadeIn 2s forwards;
@@ -91,7 +124,7 @@ body, html {
   opacity: 0;
   font-weight: 400;
   font-family: "Lato";
-  color: #ffffff;
+  color: #000000;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -229,3 +262,151 @@ footer span i {
     bottom: 0px;
   }
 }
+
+@font-face {
+  font-family: "ubuntu";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2");
+}
+
+a {
+  text-decoration: none;
+  color: #9ca0b1;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 20px;
+}
+.wrapper h1 {
+  color: #fff;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #c73b3b 10%, #6d6e6e 50%, #000000 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+nav.primary-navigation {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+}
+nav.primary-navigation ul li {
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid #3ca0e7;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: arvo;
+}
+nav.primary-navigation li a {
+  color: black;
+}
+nav.primary-navigation li a:hover {
+  color: #3ca0e7;
+}
+nav.primary-navigation li:hover {
+  cursor: pointer;
+}
+nav.primary-navigation ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: white;
+}
+nav.primary-navigation ul li:hover > ul,
+nav.primary-navigation ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+nav.primary-navigation ul li ul li {
+ 
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  border-style: none;
+}
+nav.primary-navigation ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #3ca0e7;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #3CA0E7;
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+
+#sociallinks{
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 30%;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+min-width: 400px;
+  min-height: 350px;
+  box-shadow:  0px 0px 20px rgb(78, 76, 76);
+  display: flex;
+  flex-direction: column;
+}
+
+#scltitle{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px;
+}
+
+
+#scllnks{
+  margin-top: 0px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0px 6px 0px 6px;
+}
+
+.sclimg{
+  float: left;
+  padding: 2px;
+  transform: translateY(10px);
+  
+}
+
