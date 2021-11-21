@@ -74,6 +74,27 @@
     justify-content: center;
     margin: 10px;
     margin-bottom: 20px;
+    position: relative;
+    
+  }
+
+  .ytlogo{
+    box-shadow:  0px 0px 20px rgb(78, 76, 76);
+    padding: 20px;
+    z-index: 3;
+  }
+
+  .ytlogo:hover{
+    transform: translate(-100%, 0px);
+    transition: all 3s;
+  }
+
+  #ytlogocard{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    z-index: -1;
   }
 
   .recommendedvideos{
