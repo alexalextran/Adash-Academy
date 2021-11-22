@@ -247,24 +247,21 @@ html{
     object-fit: cover;
     display: block;
     position: relative;
-    flex-shrink: 0;
   }
   
   .card-desc {
-    display: block;
-    font-size: 1.2rem;
+    font-size: 20px;
     position: absolute;
     height: 0;
     top: 0;
     opacity: 0;
-    padding: 18px 8%;
+    padding: 1px 2%;
     background-color: white;
-    overflow-y: scroll;
     transition: 0.8s ease;
   }
 
   .card:hover .card-desc {
-    opacity: 1;
+    opacity: 0.9;
     height: 100%;
   }
   
