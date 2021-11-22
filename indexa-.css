@@ -91,12 +91,13 @@ html{
     display: flex;
     position: absolute;
     height:100%; 
-    width: 37%;
+    width: 35.1%;
     background-color: #ffffff;
     z-index: -1;
     box-shadow:  0px 0px 20px rgb(78, 76, 76);
+    font-size: 20px;
+    color: #3ca0e7;
    align-items: center;
-
    text-align: center;
   }
 
@@ -244,8 +245,6 @@ html{
   .card img {
     width: 250px;
     height: 200px;
-    object-fit: cover;
-    display: block;
     position: relative;
   }
   
