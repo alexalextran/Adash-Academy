@@ -64,11 +64,12 @@ html{
     flex: 1;
     background-color: rgb(255, 255, 255);
     z-index: 1;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     margin: 10px;
     margin-bottom: 20px;
     position: relative;
+    
     
   }
 
@@ -77,6 +78,7 @@ html{
     z-index: 3;
     opacity: 1;
     transition: transform 2s;
+    
   }
 
   .ytlogo:hover{
@@ -100,9 +102,22 @@ html{
    text-align: center;
   }
 
+  #subscribe{
+    height: 240px;
+    width: 340px;
+    background-color: #3ca0e7;
+  }
+
+  #banner{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .recommendedvideos{
     justify-content: center;
     display: flex;
+    align-items: center;
     
   }
   .vid{
@@ -224,10 +239,10 @@ html{
   }
 
   .card {
-    margin: 40px;
+    margin: 8%;
     position: relative;
-    max-width: 250px;
-    max-height: 350px;
+    max-width: 325px;
+    max-height: 275px;
     box-shadow: 0 40px 60px -6px black;
   }
   
@@ -242,8 +257,8 @@ html{
   }
   
   .card img {
-    width: 250px;
-    height: 200px;
+    width: 325px;
+    height: 275px;
     position: relative;
   }
   
@@ -260,7 +275,7 @@ html{
 
   .card:hover .card-desc {
     opacity: 0.9;
-    height: 100%;
+    height: 140%;
   }
   
   
