@@ -1,3 +1,60 @@
+
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 460px;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  flex-direction: column;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
 html{
   height: 100%;
   margin: auto;
@@ -61,7 +118,7 @@ html{
   }
 
   .maincenterbottom{
-    flex: 1;
+   
     background-color: rgb(255, 255, 255);
     z-index: 1;
     display: inline-flex;
@@ -69,7 +126,7 @@ html{
     margin: 10px;
     margin-bottom: 20px;
     position: relative;
-    
+    flex-direction: row;
     
   }
 
@@ -78,6 +135,7 @@ html{
     z-index: 3;
     opacity: 1;
     transition: transform 2s;
+   
     
   }
 
@@ -90,7 +148,7 @@ html{
     display: flex;
     position: absolute;
     height:100%; 
-    width: 35.1%;
+    width: 340px;
     max-width: 340px;
     max-height: 240px;
     background-color: #ffffff;
@@ -100,12 +158,14 @@ html{
     color: #3ca0e7;
    align-items: center;
    text-align: center;
+   
   }
 
   #subscribe{
-    height: 240px;
-    width: 340px;
+    height:240px;
+    width:340px;
     background-color: #3ca0e7;
+    margin: 0% 30% 0% 10%
   }
 
   #banner{
@@ -277,5 +337,5 @@ html{
     opacity: 0.9;
     height: 140%;
   }
-  
-  
+   /*todo on the side nav bar, static iamge/video that scrolls on its own*/ 
+   
