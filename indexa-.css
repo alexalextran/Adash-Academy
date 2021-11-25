@@ -1,14 +1,4 @@
 
-
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(calc(-250px * 7));
-  }
-}
-
 @keyframes scroll {
   0% {
     transform: translateY(0);
@@ -20,57 +10,63 @@
 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 500px;
+  height: 80%;
   margin: auto;
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
-  width: 460px;
+  width: auto;
 }
 .slider::before, .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  
   content: "";
   height: 100px;
   position: absolute;
   width: 200px;
   z-index: 2;
 }
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
+
 .slider::before {
   left: 0;
   top: 0;
 }
 .slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+ animation: scroll 90s linear infinite;
   display: flex;
   flex-direction: column;
-  width: calc(250px * 14);
 }
 .slider .slide {
-  height: 100px;
+  height: 200px;
   width: 250px;
+  overflow-y: hidden;
+}
+
+.slide{
+  margin-bottom: 50px;
+  border: #000000 solid 2px;
 }
 
 html{
   height: 100%;
   margin: auto;
-  overflow: scroll;
+  overflow: auto;
 }
   body {
     display: flex;
     min-height: 100vh;
     flex-direction: row;
     margin: 0;
-    
+    background-image: url('http://www.simpleimageresizer.com/_uploads/photos/c8b3798a/istockphoto-547016978-170667a_2560x1080.jpg');
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   .col-1 {
     background: #3c3735;
     flex: 1;
+    max-width: 210;
+    max-height: 1900px;
+    
+    
   }
   .col-2 {
     display: flex;
@@ -82,21 +78,19 @@ html{
     flex-direction: row;
     border: #ffffff 5px solid ;
     color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
+    
   }
   
  
  .mainheader{
    display: flex;
    flex-direction: column;
-   background-color: #ffffff;
    color: rgb(0, 0, 0);
  
   }
 
   .maincenter{
     display: flex;
-      background-color: rgb(255, 255, 255);
       flex-direction: column;
   }
 
@@ -107,7 +101,6 @@ html{
 
   .maincentertop{
     flex: 1;
-    background-color: rgb(255, 255, 255);
     z-index: 1;
   }
 
@@ -118,8 +111,6 @@ html{
   }
 
   .maincenterbottom{
-   
-    background-color: rgb(255, 255, 255);
     z-index: 1;
     display: inline-flex;
     justify-content: center;
