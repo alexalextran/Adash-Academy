@@ -8,13 +8,14 @@
   }
 }
 .slider {
-  background: white;
+  background: rgb(190,54,54);
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 80%;
   margin: auto;
   overflow-y: hidden;
   position: relative;
-  width: auto;
+  max-width: fit-content;
+  justify-content: center;
 }
 .slider::before, .slider::after {
   
@@ -55,13 +56,18 @@ html{
     min-height: 100vh;
     flex-direction: row;
     margin: 0;
-    background-image: url('http://www.simpleimageresizer.com/_uploads/photos/c8b3798a/istockphoto-547016978-170667a_2560x1080.jpg');
+    background-image: url('file:///C:/Users/Alex%20Tran/Downloads/wallpaperflare.com_wallpaper.jpg');
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+  p{
+    color:black;
+  }
+
   .col-1 {
-    background: #3c3735;
+    background: rgb(190,54,54);
     flex: 1;
     max-width: 210;
     max-height: 1900px;
@@ -72,11 +78,12 @@ html{
     display: flex;
     flex-direction: column;
     flex: 5;
+    
   }
   .content {
     display: flex;
     flex-direction: row;
-    border: #ffffff 5px solid ;
+  
     color: rgb(0, 0, 0);
     
   }
@@ -86,7 +93,7 @@ html{
    display: flex;
    flex-direction: column;
    color: rgb(0, 0, 0);
- 
+   background-color: rgb(28,90,75)
   }
 
   .maincenter{
@@ -149,14 +156,13 @@ html{
     color: #3ca0e7;
    align-items: center;
    text-align: center;
-   
+   margin: auto;
   }
 
   #subscribe{
     height:240px;
     width:340px;
-    background-color: #3ca0e7;
-    margin: 0% 30% 0% 10%
+    margin: auto;
   }
 
   #banner{
@@ -291,10 +297,12 @@ html{
 
   .card {
     margin: 8%;
+    margin-top: 2%;
     position: relative;
     max-width: 325px;
     max-height: 275px;
     box-shadow: 0 40px 60px -6px black;
+    background-color: white;
   }
   
   .card-title {
