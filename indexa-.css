@@ -50,6 +50,7 @@ html{
   height: 100%;
   margin: auto;
   overflow: auto;
+  
 }
   body {
     display: flex;
@@ -60,6 +61,7 @@ html{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
+   
   }
 
   p{
@@ -69,15 +71,16 @@ html{
   .col-1 {
     background: rgb(190,54,54);
     flex: 1;
-    max-width: 210;
-    max-height: 1900px;
+    max-width: fit-content;
+    max-height: 2100px;
     
     
   }
   .col-2 {
     display: flex;
     flex-direction: column;
-    flex: 8;
+    flex: 21;
+    max-width: 1900px;
     
   }
   .content {
@@ -112,12 +115,17 @@ html{
     display: flex;
   }
 
+  .leftrighttitle{
+    text-align: end;
+  }
+
   .lefttitle{
     flex: 1;
+    margin-right: 22px;
   }
 
   .description{
-    flex: 1;
+    flex: 4;
   }
 
   .flex-container{
@@ -176,8 +184,7 @@ html{
 
   #banner{
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    
   }
 
   .recommendedvideos{
