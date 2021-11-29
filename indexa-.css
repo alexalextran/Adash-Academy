@@ -192,6 +192,7 @@ html{
     height: 400px;
     border-radius: 2%;
     word-wrap: break-word;
+    border: solid black 2px;
   }
 
   #wawt, #wwdt, #mst{
