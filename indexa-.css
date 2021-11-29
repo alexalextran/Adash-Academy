@@ -117,6 +117,8 @@ html{
 
   .leftrighttitle{
     text-align: end;
+    color: orange;
+    font-size: 18px;
   }
 
   .lefttitle{
@@ -126,6 +128,7 @@ html{
 
   .description{
     flex: 4;
+    font-weight: 500;
   }
 
   .flex-container{
@@ -186,15 +189,42 @@ html{
   #waw, #wwd, #ms{
     background-color: white;
     width: 300px;
-    height: 500px;
+    height: 400px;
     border-radius: 2%;
     word-wrap: break-word;
+  }
+
+  #wawt, #wwdt, #mst{
+    background: #cccccc;
+  border-radius: 50px;
+  font-size: 19px;
+  margin: 0;
+  margin-left: 10px;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  }
+
+  #wawt{
+    background-color: rgb(187,54,55);
+  }
+
+  #wwdt{
+   background-color: rgb(28,90,75) ;
+  }
+
+  #mst{
+    background-color: rgb(33,31,32);
   }
 
   .cardpic{
     border-radius: 2% 2% 0% 0%;
   }
 
+  .cardtext{
+    padding: 10px;
+  }
 
 
   #banner{
@@ -243,7 +273,7 @@ html{
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 1.5s linear infinite;
+    animation: textclip 2.8s linear infinite;
     display: inline-block;
   }
   
