@@ -469,9 +469,6 @@ min-width: 400px;
   transform: translateY(10px);
 }
 
-.flex-container{
-  display: flex;
-}
 
 .card {
   background: #fff;
@@ -482,6 +479,8 @@ min-width: 400px;
   flex-direction: row;
   border-radius: 25px;
   position: relative;
+  margin-top: 40px;
+  margin-left: 20%;
 }
 
 .card h2 {
@@ -548,20 +547,9 @@ path {
   height: 100%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-image: url("https://m.media-amazon.com/images/S/aplus-media/vc/cab6b08a-dd8f-4534-b845-e33489e91240._CR75,0,300,300_PT0_SX300__.jpg");
+  background-image: url("file:///C:/Users/Alex%20Tran/Desktop/uREc4L.jpg");
   background-position: bottom center;
   background-size: cover;
 }
 
-button {
-  border: none;
-  background: none;
-  font-size: 24px;
-  color: #8bc34a;
-  cursor: pointer;
-  transition: 0.5s;
-}
-button:hover {
-  color: #4caf50;
-  transform: rotate(22deg);
-}
+
