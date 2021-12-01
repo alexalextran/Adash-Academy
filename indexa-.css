@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
 
 @keyframes scroll {
   0% {
@@ -96,7 +101,7 @@ html{
    display: flex;
    flex-direction: column;
    color: rgb(0, 0, 0);
-   background-color: rgb(28,90,75)
+  
   }
 
   .maincenter{
