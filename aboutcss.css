@@ -383,7 +383,7 @@ nav.primary-navigation ul li {
   font-family: arvo;
 }
 nav.primary-navigation li a {
-  color: black;
+  color: white;
 }
 nav.primary-navigation li a:hover {
   color: #3ca0e7;
@@ -436,7 +436,7 @@ ul li ul li a {
 
 #sociallinks{
   margin-top: 40px;
-
+  margin-left: 30%;
   width: 30%;
   height: 300px;
   background-color: white;
@@ -469,87 +469,5 @@ min-width: 400px;
   transform: translateY(10px);
 }
 
-
-.card {
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
-  max-width: 400px;
-  display: flex;
-  flex-direction: row;
-  border-radius: 25px;
-  position: relative;
-  margin-top: 40px;
-  margin-left: 20%;
-}
-
-.card h2 {
-  margin: 0;
-  padding: 0 1rem;
-}
-
-.card .title {
-  padding: 1rem;
-  text-align: right;
-  color: green;
-  font-weight: bold;
-  font-size: 12px;
-}
-
-.card .desc {
-  padding: 0.5rem 1rem;
-  font-size: 12px;
-}
-
-.card .actions {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  padding: 0.5rem 1rem;
-}
-
-.card svg {
-  width: 85px;
-  height: 85px;
-  margin: 0 auto;
-}
-
-.img-avatar {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  border-radius: 50%;
-  border: 6px solid white;
-  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
-  top: 15px;
-  left: 85px;
-}
-
-.card-text {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-
-.title-total {
-  padding: 2.5em 1.5em 1.5em 1.5em;
-}
-
-path {
-  fill: white;
-}
-
-.img-portada {
-  width: 100%;
-}
-
-.portada {
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-image: url("file:///C:/Users/Alex%20Tran/Desktop/uREc4L.jpg");
-  background-position: bottom center;
-  background-size: cover;
-}
 
 

@@ -308,7 +308,7 @@ html{
     font-family: arvo;
   }
   nav.primary-navigation li a {
-    color: black;
+    color: white;
   }
   nav.primary-navigation li a:hover {
     color: #3ca0e7;
