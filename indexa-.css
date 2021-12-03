@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+
 @keyframes scroll {
   0% {
     transform: translateY(0);
@@ -51,50 +52,31 @@
   border: #000000 solid 2px;
 }
 
-html{
-  height: 100%;
-  margin: auto;
-  overflow: auto;
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  margin: 0;
+  background-image: url('file:///C:/Users/Alex%20Tran/Downloads/wallpaperflare.com_wallpaper.jpg');
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   
+ 
 }
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: row;
-    margin: 0;
-    background-image: url('file:///C:/Users/Alex%20Tran/Downloads/wallpaperflare.com_wallpaper.jpg');
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   
-  }
-
-  p{
-    color:black;
-  }
-
-  .col-1 {
-    background: rgb(190,54,54);
-    flex: 1;
-    max-width: fit-content;
-    max-height: 2100px;
-    
-    
-  }
-  .col-2 {
-    display: flex;
-    flex-direction: column;
-    flex: 21;
-    max-width: 1900px;
-    
-  }
-  .content {
-    display: flex;
-    flex-direction: row;
-  
-    color: rgb(0, 0, 0);
-    
-  }
+.col-1 {
+  background: rgb(190,54,54);
+  flex: 1;
+  max-width: fit-content;
+  max-height: 2100px;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+ 
   
  
  .mainheader{
@@ -265,6 +247,7 @@ html{
   
   .wrapper {
     text-align: center;
+    
   }
   .wrapper h1 {
     color: #fff;
@@ -281,8 +264,9 @@ html{
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 2.8s linear infinite;
+    animation: textclip 1.5s linear infinite;
     display: inline-block;
+    margin-top: 20px;
   }
   
   @keyframes textclip {
@@ -290,16 +274,15 @@ html{
       background-position: 200% center;
     }
   }
-  
-
-
 
 
   nav.primary-navigation {
-    margin: 0 auto;
+    margin-top: 20px;
     display: block;
     text-align: center;
     font-size: 16px;
+    padding: 20px;
+   
   }
   nav.primary-navigation ul li {
     list-style: none;
@@ -351,6 +334,17 @@ html{
     padding-left: 10px;
     border-left: 2px solid #3ca0e7;
     transition: all 0.3s ease;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: #3CA0E7;
+  }
+  
+  ul li ul li a {
+    transition: all 0.5s ease;
   }
   
   a {
