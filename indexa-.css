@@ -100,19 +100,24 @@ body {
     flex: 1;
     z-index: 1;
     display: flex;
+  
   }
 
   
 
   .leftrighttitle{
-    text-align: end;
-    color: orange;
-    font-size: 18px;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    background-color: rgb(191,55,55);
+    font-weight: 600;
+     
   }
 
   .lefttitle{
     flex: 1;
-    margin-right: 22px;
+    margin-right: 22px; 
+    border-right: solid 3px#000000;
   }
 
   .description{
@@ -167,12 +172,20 @@ body {
   }
 
   .subscribe{
-    transform: translateX(-20px)
+    transform: translateX(-20px);
+    transition: all 1s;
+    margin-top: 10px;
+  }
+
+  .subscribe:hover{
+    transform: scale(1.2);
+    transition: all 1s;
   }
 
   .yt1st{
    display: flex;
    flex-direction: column;
+  
   }
 
   #waw, #wwd, #ms{
@@ -363,9 +376,10 @@ body {
     margin-top: 2%;
     position: relative;
     max-width: 325px;
-    max-height: 275px;
+    max-height: 75px;
     box-shadow: 0 40px 60px -6px black;
     background-color: white;
+  
   }
   
   .card-title {
@@ -390,9 +404,11 @@ body {
     height: 0;
     top: 0;
     opacity: 0;
-    padding: 1px 2%;
+    padding: 40% 10%;
     background-color: white;
     transition: 0.8s ease;
+    text-align: center;
+   
   }
 
   .card:hover .card-desc {
