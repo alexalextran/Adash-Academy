@@ -107,11 +107,10 @@ body {
 
   .leftrighttitle{
     text-align: center;
-    color: black;
+    color: White;
     font-size: 24px;
-    background-color: rgb(191,55,55);
+    background-image: linear-gradient(to right, black , rgb(191,55,55) );
     font-weight: 600;
-     
   }
 
   .lefttitle{
@@ -120,9 +119,16 @@ body {
     border-right: solid 3px#000000;
   }
 
+  .lefttitlebio{
+    text-align: center;
+    margin-top: 6px;
+    font-weight: 500;
+  }
+
   .description{
     flex: 4;
     font-weight: 500;
+    font-size: 18px;
   }
 
   .flex-container{
@@ -140,6 +146,7 @@ body {
     position: relative;
     flex-direction: row;
     justify-content:space-between;
+    margin-top: 40px;
   }
 
   .ytlogo{
@@ -229,6 +236,16 @@ body {
     padding: 10px;
   }
 
+  .recvids{
+    font-weight: 500;
+    font-size: 54px;
+  }
+
+  .recvidstext{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 22px 0px 22px;
+  }
 
   #banner{
     justify-content: center;
