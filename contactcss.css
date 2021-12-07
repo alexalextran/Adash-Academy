@@ -16,7 +16,7 @@
 .slider {
   background: rgb(190,54,54);
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 80%;
+  height: 100%;
   margin: auto;
   overflow-y: hidden;
   position: relative;
@@ -72,7 +72,7 @@ body {
   background: rgb(190,54,54);
   flex: 1;
   max-width: fit-content;
-  max-height: 2100px;
+  max-height: 900px;
 }
 .col-2 {
   display: flex;
@@ -84,12 +84,14 @@ body {
     background: #fff;
     border-radius: 4px;
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
-    max-width: 400px;
+    width: 500px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     border-radius: 25px 0px 0px 25px;
     position: relative;
     border: #000000 2px solid;
+   
   
   }
   
@@ -108,7 +110,7 @@ body {
   
   .card .desc {
     padding: 0.5rem 1rem;
-    font-size: 12px;
+    font-size: 18px;
   }
   
   .card .actions {
@@ -135,7 +137,7 @@ body {
     background-position-x: -75px;
     background-position-y: -7px;
     top: 15px;
-    left: 85px;
+    left: 105px;
   }
   
   .card-text {
@@ -206,8 +208,7 @@ body {
     }
   }
   
-  
-nav.primary-navigation {
+  nav.primary-navigation {
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -221,58 +222,19 @@ nav.primary-navigation {
     display: inline-block;
     padding: 0 30px;
     position: relative;
-    text-decoration: none;
     text-align: center;
     font-family: arvo;
   }
-  nav.primary-navigation li a {
+  nav.primary-navigation a {
     color: white;
   }
-  nav.primary-navigation li a:hover {
+  nav.primary-navigation a:hover {
     color: #3ca0e7;
-  }
-  nav.primary-navigation li:hover {
-    cursor: pointer;
-  }
-  nav.primary-navigation ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    padding-left: 0;
-    left: 0;
-    display: none;
-    background: white;
-  }
-  nav.primary-navigation ul li:hover > ul,
-  nav.primary-navigation ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    min-width: 250px;
-    text-align: left;
-    padding-top: 20px;
-    box-shadow: 0px 3px 5px -1px #ccc;
-  }
-  nav.primary-navigation ul li ul li {
-   
-    width: 100%;
-    text-align: left;
-    margin-bottom: 10px;
-    border-style: none;
-  }
-  nav.primary-navigation ul li ul li a:hover {
-    padding-left: 10px;
-    border-left: 2px solid #3ca0e7;
-    transition: all 0.3s ease;
-  }
-  
-  a {
-    text-decoration: none;
+    transition: color 1s;
   }
   a:hover {
     color: #3CA0E7;
   }
-  
   ul li ul li a {
     transition: all 0.5s ease;
   }
@@ -286,8 +248,7 @@ nav.primary-navigation {
   }
 
   .contactcard{
-  width: 300px;
-    width: 400px;
+    width: 500px;
     text-align: center;
     background-color: white;
     backdrop-filter: blur(12px);
@@ -298,9 +259,14 @@ nav.primary-navigation {
   }
 
   .CU{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     color: rgb(23,85,74);
+  }
+
+  .Cdesc{
+    padding-top: 12px;
+    font-size: 19px;
   }
 
   .WTU{
