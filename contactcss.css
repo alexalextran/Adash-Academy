@@ -10,7 +10,7 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(calc(-250px * 7));
+    transform: translateY(calc(-3560px));
   }
 }
 .slider {
@@ -23,6 +23,7 @@
   max-width: fit-content;
   justify-content: center;
 }
+
 .slider::before, .slider::after {
   
   content: "";
@@ -37,10 +38,12 @@
   top: 0;
 }
 .slider .slide-track {
- animation: scroll 90s linear infinite;
+ animation: scroll 50s linear infinite;
   display: flex;
   flex-direction: column;
 }
+
+
 .slider .slide {
   height: 200px;
   width: 250px;

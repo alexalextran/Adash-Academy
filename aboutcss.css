@@ -10,7 +10,7 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(calc(-250px * 7));
+    transform: translateY(calc(-3560px));
   }
 }
 .slider {
@@ -37,7 +37,7 @@
   top: 0;
 }
 .slider .slide-track {
- animation: scroll 90s linear infinite;
+ animation: scroll 50s linear infinite;
   display: flex;
   flex-direction: column;
 }
