@@ -110,7 +110,7 @@ body {
   
   .card .desc {
     padding: 0.5rem 1rem;
-    font-size: 18px;
+    font-size: 15px;
   }
   
   .card .actions {
@@ -132,10 +132,11 @@ body {
     position: absolute;
     border-radius: 50%;
     border: 6px solid white;
-    background-image: url("file:///C:/Users/Alex%20Tran/Desktop/aadarsh.jpg");
+    background-image: url("file:///C:/Users/Alex%20Tran/Desktop/images%20for%20website/aadarsh.jpg");
     background-position: center;
-    background-position-x: -75px;
+    background-position-x: -105px;
     background-position-y: -7px;
+    background-size: 100px 100px;
     top: 15px;
     left: 105px;
   }
@@ -162,7 +163,7 @@ body {
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-image: url("file:///C:/Users/Alex%20Tran/Desktop/uREc4L.jpg");
+    background-image: url("file:///C:/Users/Alex%20Tran/Desktop/images%20for%20website/uREc4L.jpg");
     background-position: bottom center;
     background-size: cover;
   }
